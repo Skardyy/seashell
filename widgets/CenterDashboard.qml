@@ -28,9 +28,17 @@ PanelWindow {
     top: true
   }
   margins {
-    top: 8
+    top: 6
   }
-  color: Config.surface
+  color: "transparent"
+  visible: implicitHeight > 0
+
+  Rectangle {
+    anchors.fill: parent
+    color: Config.surface
+    bottomLeftRadius: Config.radius
+    bottomRightRadius: Config.radius
+  }
 
   Item {
     id: dashboardContent

@@ -17,6 +17,6 @@ ParallelAnimation {
     property: "opacity"
     to: 0.0
     duration: 80
-    easing.type: Easing.InCubic
+    easing.type: Easing.InOutCubic
   }
 }
